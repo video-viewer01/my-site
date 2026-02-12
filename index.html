@@ -1,47 +1,32 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>yuno-1ms clone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      overflow: hidden;
-    }
-
-    iframe, video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      border: none;
-      object-fit: cover;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  background:black;
+  overflow:hidden;
+}
+video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+</style>
 </head>
-
 <body>
 
-  <!-- パターン①：外部ページをそのまま表示 -->
-  <!--
-  <iframe src="https://example.com"></iframe>
-  -->
-
-  <!-- パターン②：動画直表示（yuno-1ms系） -->
-  <video
-    src="https://cdn.videy.co/PZHIINFs1.mp4"
-    autoplay
-    loop
-    muted
-    playsinline>
-  </video>
+<video
+  src="https://cdn.videy.co/PZHIINFs1.mp4"
+  autoplay
+  loop
+  muted
+  playsinline>
+</video>
 
 </body>
 </html>
